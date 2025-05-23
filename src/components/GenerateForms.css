@@ -1,0 +1,1682 @@
+.company-header {
+  background-color: #220938;
+  padding: 18px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b0abf8;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+ 
+
+}
+.h1p{
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #80a0f1;
+  margin-top: -30px; 
+ margin-left: 30px;/* Add this to move the text up */
+}
+
+.h1font {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: -35px; 
+ /* Add this to move the text up */
+}
+
+.icon1{
+  color: #ec4884;
+  font-size: 2rem;
+
+  margin-top: -35px;  
+  margin-right: 30px;/* Add this to move the text up */
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-wrapper {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-icon {
+  color: #ec4899;
+  font-size: 24px;
+}
+
+.company-details h1 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.company-details p {
+  color: #9ca3af;
+  font-size: 14px;
+  margin: 4px 0 0 0;
+}
+
+.edit-button {
+  background-color: #ec4899;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-button:hover {
+  background-color: #d53f8c;
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-save {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn-save:hover {
+  background-color: #059669;
+}
+.horizontal-nav{
+  border-color: #f6f9f8;
+  border-block: 1px solid #4b67f4;
+  ;
+}
+
+.btn-cancel {
+  background-color: transparent;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+}
+
+.btn-cancel:hover {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.nav-container {
+  background-color: #13051f;
+  padding: 0.25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+
+.nav-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #94a3b8;
+  padding: 0.35rem;
+  border-radius: 0.25rem;
+  border: none;
+  background: none;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  transition: all 0.2s;
+  flex: 1;
+  justify-content: center;
+  min-width: 0;
+}
+
+.nav-icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  min-width: 0.8rem;
+}
+
+.nav-tab.active {
+  background-color: #ec4884;
+  color: white;
+
+}
+
+/* Remove the gradient overlay since we don't need it anymore */
+@media screen and (max-width: 768px) {
+  .nav-container::after {
+    display: none;
+  }
+}
+
+.nav-tab2 {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(247, 245, 245, 0.913);
+}
+
+.nav-tab2 {
+  padding: 0.75rem 1rem;
+  color: #232424;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.5rem;
+}
+
+
+
+.nav-tab2 svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  opacity: 0.7;
+}
+
+.nav-tab.active2 svg {
+  opacity: 1;
+}
+
+.grid {
+  padding: 1.5rem;
+  background-color: #13051f;
+}
+
+.registration-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.company-card {
+  background-color: #1a0b2e;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  color: #ffffff;
+}
+
+.editable-field {
+  width: 100%;
+  border: 1px solid #3d2b5e;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: #ffffff;
+  background-color: #2d1b4e;
+  transition: all 0.2s;
+}
+
+.editable-field:focus {
+  outline: none;
+  border-color: #ec4899;
+  background-color: #2d1b4e;
+  box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.1);
+}
+
+.editing .form-field1 {
+  margin-bottom: 1rem;
+}
+
+.editing .form-field1 label {
+  color: #b0b2b4;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.company-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.form-field1 {
+  margin-bottom: 1.25rem;
+}
+
+.form-field1 label {
+  display: block;
+  font-size: 0.875rem;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.form-field1 p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.deadline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.deadline-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.deadline-item span:first-child {
+  font-size: 1.25rem;
+}
+
+.deadline-item span:nth-child(2) {
+  flex: 1;
+  color: #2e2e5e;
+  font-size: 0.875rem;
+}
+
+.deadline-item span:last-child {
+  font-size: 0.75rem;
+}
+
+/* Legal & Compliance Styles */
+.legal-compliance-section {
+  padding: 2rem;
+  background-color: #13051f;  /* Changed to match main background */
+  min-height: calc(100vh - 120px);
+}
+
+.legal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.legal-card-dark {
+  background-color: #1a0b2e;  /* Changed to match company-card */
+  border-radius:2rem;
+  padding: 1.5rem;
+}
+
+.legal-card-dark h3 {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.form-group1 {
+  margin-bottom: 1.25rem;
+}
+
+.form-group1 label {
+  display: block;
+  font-size: 0.875rem;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.form-group1 p {
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+.form-group1 .form-control {
+  width: 100%;
+  border: 1px solid #3d2b5e;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: #ffffff;
+  background-color: #2d1b4e;
+  transition: all 0.2s;
+}
+
+.form-group1 .form-control:focus {
+  outline: none;
+  border-color: #ec4899;
+  box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.1);
+}
+
+/* Legal & Compliance Header Styles */
+.legal-h1p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #80a0f1;
+  margin-top: -30px;
+  margin-left: 30px;
+}
+
+.legal-h1font {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: -35px;
+}
+
+.legal-icon1 {
+  color: #ec4884;
+  font-size: 2rem;
+  margin-top: -35px;
+  margin-right: 30px;
+}
+
+/* Financial Details Styles */
+.financial-details-section {
+  padding: 2rem;
+  background-color: #2e2e5e;
+  min-height: calc(100vh - 120px);
+}
+
+.financial-details-section h2 {
+  color: rgb(255, 251, 251);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.capital-section,
+.shareholding-section {
+  background-color: #2e2e5e;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.capital-section h3,
+.shareholding-section h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.capital-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.capital-card {
+  padding: 1rem;
+  background-color: #2e2e5e;
+  border-radius: 0.375rem;
+}
+
+.capital-card label {
+  display: block;
+  color: #ffffff;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.capital-card .amount {
+  color: rgb(254, 254, 254);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.shareholding-table {
+  width: 100%;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.table-header,
+.table-row,
+.table-footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 0.75rem 1rem;
+}
+
+.table-header {
+  background-color: #36366b;
+  color: #fffdfd;
+  font-size: 0.875rem;
+}
+
+.table-row {
+  color: rgb(249, 248, 248);
+  border-bottom: 1px solid #2e2e5e;
+}
+
+.table-footer {
+  background-color: #3e3e77;
+  color: rgb(255, 254, 254);
+  font-weight: 500;
+}
+
+.table-row:hover {
+  background-color: #353568;
+}
+
+.table-row input.form-control {
+  background-color: #2d1b4e;
+  border: 1px solid #3d2b5e;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.table-row input.form-control::placeholder {
+  color: #6b7280;
+  opacity: 0.7;
+}
+
+.table-row select.form-control {
+  background-color: #2d1b4e;
+  border: 1px solid #3d2b5e;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.table-row .percentage {
+  color: #ec4884;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .legal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.management-section {
+  padding: 2rem;  
+  background-color: #13051f;  /* Match the darker background */
+  min-height: calc(100vh - 120px);
+}
+
+.management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.btn-add-person {
+  background-color: #ec4899;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-add-person:hover {
+  background-color: #db2777;
+}
+
+.subsection-title {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.directors-grid,
+.shareholders-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.person-card,
+.shareholder-card {
+  background-color: #1a0b2e;  /* Match shareholder card background */
+  border-radius: 0.8rem;
+  padding: 1.8rem;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.person-icon,
+.shareholder-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: #2d1b4e;  /* Match shareholder icon background */
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #ec4884;  /* Match shareholder icon color */
+}
+
+.person-info,
+.shareholder-info {
+  flex: 1;
+}
+
+.person-info h4,
+.shareholder-info h4 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.role,
+.type {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info,
+.shares-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+.info-item span {
+  opacity: 0.7;
+}
+
+.info-item svg {
+  color: #94a3b8;  /* Match the icon colors */
+}
+
+@media (max-width: 1024px) {
+  .directors-grid,
+  .shareholders-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.btn-add-shareholder {
+  background-color: #e9ecf0;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-add-shareholder:hover {
+  background-color: #a3a4a5;
+}
+
+.btn-remove-shareholder {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #ef4444;
+  color: rgb(27, 26, 26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.shareholding-table .table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.shareholding-table .form-control {
+  background-color: #f8f8f8;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgb(0, 0, 0);
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  width: 100%;
+}
+
+.shareholding-table select.form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+}
+
+.shareholding-table .percentage {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.table-footer {
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  font-weight: 500;
+}
+
+.add-person-form {
+  background-color: #f8fafc;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.avatar-section {
+  width: 80px;
+  height: 80px;
+  background-color: #e2e8f0;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.avatar-upload {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.avatar-placeholder {
+  color: #64748b;
+  font-size: 2rem;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+.input-group:focus-within {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+.input-group svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #64748b;
+}
+
+.form-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.875rem;
+  color: #1f2937;
+  background: transparent;
+}
+
+.form-input::placeholder {
+  color: #94a3b8;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-cancel {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #64748b;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+}
+
+.btn-save {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+  background-color: #3b82f6;
+  border: none;
+}
+
+.btn-cancel:hover {
+  background-color: #f1f5f9;
+}
+
+.btn-save:hover {
+  background-color: #2563eb;
+}
+
+.form-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+/* Dark theme overrides */
+.dark .add-person-form {
+  background-color: #1e293b;
+}
+
+.dark .input-group {
+  background-color: #0f172a;
+  border-color: #334155;
+}
+
+.dark .form-input {
+  color: white;
+}
+
+.dark .form-input::placeholder {
+  color: #64748b;
+}
+
+.dark .btn-cancel {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #94a3b8;
+}
+
+.dark .btn-cancel:hover {
+  background-color: #334155;
+}
+
+.empty-state {
+  padding: 2rem;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  background-color: #2d1b4e;
+  border-radius: 0.375rem;
+  border: 1px dashed #3d2b5e;
+}
+
+.edit-company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.info-item svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #6b7280;
+}
+
+.person-icon svg,
+.shareholder-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #4b5563;
+}
+
+.btn-add-person svg,
+.btn-add-shareholder svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.btn-remove svg,
+.btn-remove-shareholder svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.btn-primary svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.company-type-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.company-type-selector select {
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.company-type-selector select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+.company-type-selector select:hover {
+  background-color: #f9fafb;
+}
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .company-header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .registration-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .nav-container {
+    padding: 0.5rem;
+    overflow-x: auto;
+  }
+
+  .nav-tabs2 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    gap: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-tab {
+    white-space: nowrap;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .grid {
+    padding: 1rem;
+  }
+
+  /* Legal & Compliance Section */
+  .legal-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .legal-card-dark {
+    padding: 1rem;
+  }
+
+  /* Financial Details Section */
+  .capital-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .capital-section,
+  .shareholding-section {
+    padding: 1rem;
+  }
+
+  /* Management Section */
+  .directors-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .person-card {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .person-info {
+    width: 100%;
+  }
+
+  .contact-info {
+    gap: 0.5rem;
+  }
+
+  /* Shareholding Table */
+  .shareholding-table {
+    overflow-x: auto;
+  }
+
+  .table-header,
+  .table-row,
+  .table-footer {
+    grid-template-columns: 150px 100px 100px 80px auto;
+    min-width: 600px;
+  }
+
+  .table-row input,
+  .table-row select {
+    min-width: 120px;
+  }
+
+  /* Form Controls */
+  .form-group1 {
+    margin-bottom: 0.75rem;
+  }
+
+  .form-control {
+    font-size: 14px;
+    height: 40px;
+  }
+
+  /* Company Profile Section */
+  .company-card {
+    margin-top: 1rem !important;
+  }
+
+  .company-card > div {
+    flex-direction: column !important;
+  }
+
+  .company-card > div > div {
+    width: 100% !important;
+  }
+
+  /* Edit Mode Controls */
+  .edit-company-info {
+    width: 100%;
+  }
+
+  .company-type-selector {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .company-type-selector select {
+    width: 100%;
+  }
+
+  /* Action Buttons */
+  .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Management Buttons */
+  .management-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn-add-person,
+  .btn-add-shareholder {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Empty States */
+  .empty-state {
+    padding: 1rem;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 320px) {
+  .nav-tab {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .company-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 1.125rem;
+  }
+
+  .legal-card-dark h3,
+  .capital-section h3,
+  .shareholding-section h3 {
+    font-size: 1rem;
+  }
+
+  .form-group1 label {
+    font-size: 0.75rem;
+  }
+
+  .person-card {
+    padding: 0.75rem;
+  }
+
+  .person-info h4 {
+    font-size: 0.875rem;
+  }
+
+  .info-item {
+    font-size: 0.75rem;
+  }
+}
+
+/* Add scroll indicators for horizontal scrolling */
+@media screen and (max-width: 768px) {
+  .nav-container::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background: linear-gradient(to right, transparent, #ffffff);
+    pointer-events: none;
+  }
+
+  .shareholding-table::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background: linear-gradient(to right, transparent, #ffffff);
+    pointer-events: none;
+  }
+}
+.company-profile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  background-color: #1a0b2e;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.profile-section h3 {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.key-statistics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.statistic-card {
+  background-color: #2d1b4e;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.statistic-card label {
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.statistic-card p {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0 0;
+}
+
+/* Add to your GenerateForms.css file */
+.company-profile-card {
+  background-color: #1a0b2e;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.info-label {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.info-value {
+  color: #ffffff;
+  margin-top: 0.25rem;
+}
+
+.statistics-card {
+  background-color: #2d1b4e;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contact-icon {
+  color: #94a3b8;
+  font-size: 1.25rem;
+}
+
+.company-profile {
+  padding: 2rem;
+  background: #1a1a3c;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.profile-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.info-section {
+  background: #232348;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.info-section h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-field1 {
+  margin-bottom: 1rem;
+}
+
+.form-field1 label {
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.form-field1 p {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.editable-field1 {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: #1a1a3c;
+  border: 1px solid #3f3f7c;
+  color: #ffffff;
+}
+
+/* Financial Details Updated Styles */
+.financial-details-section {
+  padding: 2rem;
+  background-color: #13051f;
+  min-height: calc(100vh - 120px);
+}
+
+.financial-details-section h2 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.capital-section {
+  background-color: #1a0b2e;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.capital-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.capital-card {
+  background-color: #2d1b4e;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #3d2b5e;
+}
+
+.capital-card label {
+  display: block;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.capital-card .amount {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.shareholding-section {
+  background-color: #1a0b2e;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.shareholding-table {
+  margin-top: 1rem;
+}
+
+.table-header {
+  background-color: #2d1b4e;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  border-bottom: 1px solid #3d2b5e;
+}
+
+.table-row {
+  border-bottom: 1px solid #3d2b5e;
+  color: #ffffff;
+}
+
+.table-row:hover {
+  background-color: #2d1b4e;
+}
+
+.table-footer {
+  background-color: #2d1b4e;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.add-person-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1a0b2e;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+  color: #ffffff;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.modal-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.form-row {
+  margin-bottom: 1.5rem;
+}
+
+.form-row label {
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.form-row input,
+.form-row select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: #2d1b4e;
+  border: 1px solid #3d2b5e;
+  color: #ffffff;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  outline: none;
+  border-color: #ec4884;
+  box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.1);
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.modal-save {
+  background: #ec4884;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-cancel {
+  background: transparent;
+  color: #94a3b8;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #3d2b5e;
+  cursor: pointer;
+}
+
+/* Add these styles after the person-card styles */
+
+.shareholders-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.shareholder-card {
+  background-color: #1a0b2e;
+  border-radius: 0.8rem;
+  padding: 1.8rem;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.shareholder-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: #2d1b4e;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #ec4884;
+}
+
+.shareholder-info {
+  flex: 1;
+}
+
+.shareholder-info h4 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.shares-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.percentage {
+  font-weight: 600;
+  color: #ec4884;
+}
+
+.btn-remove {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-remove:hover {
+  background-color: rgba(239, 68, 68, 0.2);
+}
+
+@media (max-width: 768px) {
+  .shareholders-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.corporate-history-section {
+  padding: 2rem;
+  background-color: #13051f;
+}
+
+.timeline {
+  position: relative;
+  padding: 1rem 0;     /* Reduced from 2rem */
+  margin-left: 1rem;   /* Added to give space from left edge */
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.25rem;       /* Adjusted to align with smaller marker */
+  top: 0;
+  height: 100%;
+  width: 1px;          /* Reduced from 2px */
+  background: #2d1b4e;
+}
+
+.timeline-item {
+  position: relative;
+  margin-left: 1.5rem;  /* Reduced from 2rem */
+  padding: 1rem;        /* Reduced from 1.5rem */
+  background: #1a0b2e;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem; /* Reduced from 2rem */
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -1.75rem;      /* Reduced from -2.5rem */
+  width: 0.75rem;      /* Reduced from 1rem */
+  height: 0.75rem;     /* Reduced from 1rem */
+  border-radius: 50%;
+  background: #ec4884;
+  border: 2px solid #2d1b4e;
+  top: 1.25rem;        /* Added to align with title */
+}
+
+.timeline-content1 {
+  color: #ffffff;
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.event-header h3 {
+  font-size: 0.875rem;  /* Reduced from 1.125rem */
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.event-date {
+  font-size: 0.75rem;   /* Reduced from 0.875rem */
+  color: #94a3b8;
+  margin-bottom: 0.25rem;
+}
+
+.event-description {
+  font-size: 0.813rem;  /* New size between date and title */
+  color: #ffffff;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+.btn-add-event {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #2d1b4e;
+  color: #ffffff;
+  border: 1px solid #3d2b5e;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-add-event:hover {
+  background-color: #3d2b5e;
+}
+
+.add-event-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.add-event-modal .modal-content {
+  background: #1a0b2e;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+}
+
+.add-event-modal .form-row {
+  margin-bottom: 1.5rem;
+}
+
+.add-event-modal .form-row label {
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.add-event-modal .form-row input,
+.add-event-modal .form-row textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: #2d1b4e;
+  border: 1px solid #3d2b5e;
+  color: #ffffff;
+}
+
+.add-event-modal .modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-save,
+.btn-cancel {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-save {
+  background: #ec4884;
+  color: white;
+  border: none;
+}
+
+.btn-cancel {
+  background: transparent;
+  border: 1px solid #3d2b5e;
+  color: #94a3b8;
+}

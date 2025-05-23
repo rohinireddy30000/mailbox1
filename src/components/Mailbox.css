@@ -1,0 +1,163 @@
+.mailbox-container {
+  background: #18193a;
+  color: #fff;
+  padding: 32px 40px;
+  min-height: 100vh;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.mailbox-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2em;
+  font-weight: 700;
+}
+
+.mailbox-container p {
+  color: #b8b8ff;
+  margin-bottom: 2em;
+}
+
+.mailbox-actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.mailbox-actions button {
+  background: #23234a;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.mailbox-actions button.active,
+.mailbox-actions button:hover {
+  background: #ff4b8b;
+  color: #fff;
+}
+
+.mailbox-toolbar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 18px;
+  align-items: center;
+}
+
+.mailbox-toolbar input {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #23234a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.mailbox-toolbar button {
+  background: #23234a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.mailbox-toolbar button:hover {
+  background: #ff4b8b;
+  color: #fff;
+}
+
+.mailbox-list {
+  margin-top: 18px;
+  background: #23234a;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.mailbox-list-header,
+.mailbox-list-item {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 18px 24px;
+}
+
+.mailbox-list-header {
+  background: #23234a;
+  color: #b8b8ff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #29295a;
+}
+
+.mailbox-list-item {
+  border-bottom: 1px solid #29295a;
+  font-size: 1rem;
+}
+
+.mailbox-list-item:last-child {
+  border-bottom: none;
+}
+
+.mail-tag {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  background: #3a3b5a;
+  color: #b8b8ff;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.mail-tag.important {
+  background: #ff4b8b;
+  color: #fff;
+}
+
+.mail-status {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.mail-status.new {
+  color: #ff4b8b;
+}
+
+.mail-status.scanned {
+  color: #00ffb8;
+}
+
+.mail-status.forwarded {
+  color: #b8b8ff;
+}
+
+.mail-official {
+  font-size: 0.85em;
+  color: #b8b8ff;
+  margin-top: 2px;
+}
+
+.mailbox-list-item button {
+  background: #29295a;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  margin-right: 8px;
+  font-size: 1.2em;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.mailbox-list-item button:hover {
+  background: #ff4b8b;
+  color: #fff;
+}

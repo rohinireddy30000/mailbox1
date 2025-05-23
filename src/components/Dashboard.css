@@ -1,0 +1,421 @@
+.expansion-dashboard {
+  background: #0a0a23;
+  min-height: 100vh;
+  padding: 40px 0 60px 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.company-card1{
+  background-color: rgb(30 27 63 / 1);
+  border: 2px solid rgba(99, 102, 241, 0.5);
+  border-radius: 16px;
+  margin: 0 auto 32px auto;
+  max-width: 1000px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+
+.company-main {
+  flex: 1;
+}
+
+.company-header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.company-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.company-icon1 {
+  color: #EA3A70;
+  flex-shrink: 0;
+}
+
+.title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.company-type {
+  color: #a5b4fc;
+  font-size: 0.9rem;
+}
+
+.company-meta {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 16px;
+  margin-top: 12px;
+  color: #a5b4fc;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+}
+
+.meta-item.active {
+  color: #22c55e;
+  font-weight: 500;
+}
+
+.meta-item svg {
+  flex-shrink: 0;
+}
+
+.status-dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 9999px;
+  background-color: #4ade80;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.expand-button {
+  background: transparent;
+  border: none;
+  color: #a5b4fc;
+  cursor: pointer;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.expand-button:hover {
+  color: #fff;
+}
+
+.expanded .expand-button {
+  transform: rotate(-90deg);
+}
+
+.card-footer {
+  background-color: #312e8166;
+  margin-top: 24px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(99, 102, 241, 0.3);
+
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.view-profile-btn {
+  color: #a5b4fc;
+  background: transparent;
+  border: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.view-profile-btn:hover {
+  color: #fff;
+}
+
+.subsidiary-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #a5b4fc;
+}
+
+.subsidiary-dots {
+  display: flex;
+  align-items: center;
+}
+
+.subsidiary-dot {
+  width: 16px;
+  height: 16px;
+  background: rgba(67, 56, 202, 0.5);
+  border: 1px solid rgba(99, 102, 241, 0.5);
+  border-radius: 50%;
+  margin-left: -4px;
+}
+
+.company-details1{
+  margin-top: 24px;
+  border-top: 1px solid rgba(99, 102, 241, 0.3);
+  padding-top: 24px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.detail-item {
+
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-label1 {
+  color: #a5b4fc;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.detail-value {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.detail-value-with-icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+.detail-value:empty::before,
+.detail-value-with-icon span:empty::before {
+  content: "Not set";
+  color: #6b7280;
+  font-style: italic;
+}
+
+.company-name:empty::before,
+.company-type:empty::before {
+  content: "Not set";
+  color: #6b7280;
+  font-style: italic;
+}
+
+.welcome-section {
+  text-align: center;
+  margin: 48px 0 32px 0;
+}
+
+.welcome-section h2 {
+  color: #ffd600;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.welcome-section p {
+  color: #bdbdbd;
+  font-size: 1.1rem;
+}
+
+.expansion-cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.expansion-card {
+  background: #1e1e3f;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  overflow: hidden;
+  width: 260px;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  border: 2px solid #3a3a6a;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.expansion-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+  border-color: #ffd600;
+}
+
+.city-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  filter: brightness(0.85);
+}
+
+.card-content {
+  padding: 18px 16px 16px 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.city-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.country {
+  color: #ffd600;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+
+.badge {
+  border-radius: 8px;
+  padding: 1.3px 1.3px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  background: #3a3a6a;
+  border: 1.5px solid transparent;
+  min-width: 80px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+}
+
+.badge.active { background: #00e676; color: #181848; border-color: #00e676; }
+.badge.pending { 
+  background: #ffd600; 
+  color: #181848; 
+  border-color: #ffd600;
+
+}
+.badge.consideration { background: #ff9800; color: #181848; border-color: #ff9800; }
+.badge.open { background: #00bcd4; color: #181848; border-color: #00bcd4; }
+.badge.legal { background: #e91e63; color: #fff; border-color: #e91e63; }
+.badge.branch { background: #e91e63; color: #fff; border-color: #e91e63; }
+.badge.virtual { background: #00bcd4; color: #fff; border-color: #00bcd4; }
+.badge.tax { 
+  background: #ffd600; 
+  color: #181848; 
+  border-color: #ffd600;
+  padding: 1.3px 1.3px;
+  justify-content: center;
+
+
+}
+
+.market-info {
+  font-size: 0.95rem;
+  color: #bdbdbd;
+  margin-bottom: 10px;
+}
+
+.market-info b {
+  color: #fff;
+  font-weight: 600;
+}
+
+.explore-btn {
+  background: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: auto;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-btn:hover {
+  background: #c2185b;
+}
+
+@media (max-width: 900px) {
+  .expansion-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .expansion-card {
+    width: 90vw;
+    max-width: 350px;
+  }
+  .company-card {
+    max-width: 95vw;
+    padding: 24px 10px;
+  }
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.add-market-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0.75rem 1.5rem;
+  background: rgba(49, 46, 129, 0.5);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: #ffffff;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 32px auto;
+  transition: background-color 0.2s ease;
+}
+
+.add-market-button:hover {
+  background: rgba(55, 48, 163, 0.5);
+}
+
+.add-market-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.text-indigo-400 {
+  color: #818cf8;
+}
+.profile-btn{
+  background-color: #EA3A70;
+  color: #fff;
+  
+}
